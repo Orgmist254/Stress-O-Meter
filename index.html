@@ -4,6 +4,7 @@
   <style>
     body {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100vh;
@@ -11,9 +12,16 @@
       background-color: #f2ede0; /* Sherwin-Williams "Alabaster" */
     }
 
+    h1 {
+      font-family: 'Arial', sans-serif; /* You can replace 'Arial' with the font of your choice */
+      font-size: 24px;
+      margin-bottom: 20px; /* Added space below the title */
+    }
+
     .stress-widget {
       display: flex;
-      gap: 20px; /* Increased spacing between the circles */
+      gap: 30px; /* Increased spacing between the circles */
+      background: transparent; /* Transparent background behind the circles */
     }
 
     .circle {
@@ -38,6 +46,7 @@
   </style>
 </head>
 <body>
+  <h1>How are you feeling?</h1>
   <div class="stress-widget">
     <div class="circle zen" onclick="setStressLevel('zen')">Zen</div>
     <div class="circle feeling-good" onclick="setStressLevel('feeling-good')">Feeling Good</div>
