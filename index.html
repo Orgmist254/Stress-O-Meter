@@ -25,13 +25,16 @@
       align-items: center;
       cursor: pointer;
       font-size: 16px;
-      color: white;
+      color: #fff; /* Text color is white */
+      background-color: #a2b9cc; /* Benjamin Moore "Palladian Blue" - Relaxing blue background */
+      transition: background-color 0.3s; /* Smooth color transition */
     }
 
-    .zen { background-color: #b0c4de; /* Sherwin-Williams "Sea Salt" */ }
-    .feeling-good { background-color: #a2b9cc; /* Benjamin Moore "Palladian Blue" */ }
-    .chill-out { background-color: #7b92a3; /* Farrow & Ball "Lavender Blue" */ }
-    .yellow { background-color: yellow; }
+    .circle:hover {
+      background-color: #7b92a3; /* Farrow & Ball "Lavender Blue" - Hover color */
+    }
+
+    .yellow { background-color: #FFFF00; /* Yellow selection color */ }
   </style>
 </head>
 <body>
