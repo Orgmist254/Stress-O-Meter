@@ -15,18 +15,19 @@
     h1 {
       font-family: 'Arial', sans-serif; /* You can replace 'Arial' with the font of your choice */
       font-size: 24px;
-      margin-bottom: 20px; /* Added space below the title */
+      margin-bottom: 30px; /* Increased space below the title */
+      color: white; /* Title color is white */
     }
 
     .stress-widget {
       display: flex;
-      gap: 30px; /* Increased spacing between the circles */
+      gap: 50px; /* Further increased spacing between the circles */
       background: transparent; /* Transparent background behind the circles */
     }
 
     .circle {
-      width: 100px;
-      height: 100px;
+      width: 150px; /* Larger circle size */
+      height: 150px;
       border-radius: 50%;
       display: flex;
       justify-content: center;
@@ -42,6 +43,9 @@
       background-color: #A5B5C1; /* Valspar "Hazy Blue" - Hover color */
     }
 
+    .zen { background-color: #B0C4DE; /* Sherwin-Williams "Sea Salt" */ }
+    .feeling-good { background-color: #A2B9CC; /* Benjamin Moore "Palladian Blue" */ }
+    .chill-out { background-color: #7B92A3; /* Farrow & Ball "Lavender Blue" */ }
     .selected { background-color: #93c572; /* Calming green selection color */ }
   </style>
 </head>
@@ -50,7 +54,7 @@
   <div class="stress-widget">
     <div class="circle zen" onclick="setStressLevel('zen')">Zen</div>
     <div class="circle feeling-good" onclick="setStressLevel('feeling-good')">Feeling Good</div>
-    <div class="circle chill-out" onclick="setStressLevel('chill-out')">Chill Out</div>
+    <div class="circle chill-out" onclick="setStressLevel('chill-out')">I Need to Chill Out</div>
   </div>
   <script>
     let selectedCircle = null;
