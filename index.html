@@ -26,15 +26,15 @@
       cursor: pointer;
       font-size: 16px;
       color: #fff; /* Text color is white */
-      background-color: #a2b9cc; /* Benjamin Moore "Palladian Blue" - Relaxing blue background */
+      background-color: #C3D7DF; /* Behr "Rainwashed" - Relaxing green background */
       transition: background-color 0.3s; /* Smooth color transition */
     }
 
     .circle:hover {
-      background-color: #7b92a3; /* Farrow & Ball "Lavender Blue" - Hover color */
+      background-color: #A5B5C1; /* Valspar "Hazy Blue" - Hover color */
     }
 
-    .yellow { background-color: #FFFF00; /* Yellow selection color */ }
+    .selected { background-color: #93c572; /* Calming green selection color */ }
   </style>
 </head>
 <body>
@@ -48,10 +48,10 @@
 
     function setStressLevel(level) {
       if (selectedCircle) {
-        selectedCircle.classList.remove('yellow');
+        selectedCircle.classList.remove('selected');
       }
       const circle = document.querySelector(`.${level}`);
-      circle.classList.add('yellow');
+      circle.classList.add('selected');
       selectedCircle = circle;
     }
   </script>
